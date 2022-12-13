@@ -1,0 +1,154 @@
+Usage synopsis:
+ 
+omnirpt -version | -help
+ 
+omnirpt -report ReportName 
+        ReportOptions 
+        [FormatOption] 
+        [MethodOptions] 
+        [-header] 
+        [-multicell] 
+        [-[no_]multiple] 
+ 
+omnirpt -rptgroup ReportGroup 
+ 
+FormatOptions: 
+        -ascii | 
+        -html | 
+        -tab | 
+        -short 
+ 
+MethodOptions: 
+        -email EmailAddress... | 
+        -smtp EmailAddress... | 
+        -snmp Hostname... | 
+        -broadcast Hostname... | 
+        -log Filename... | 
+        -external CommandName... 
+ 
+ReportName: 
+        list_sessions | 
+        session_flow | 
+        device_flow | 
+        used_media | 
+        used_media_extended | 
+        host_statistics | 
+        session_statistics | 
+        session_errors | 
+        dl_trees | 
+        obj_nobackup | 
+        obj_copies | 
+        obj_lastbackup | 
+        obj_avesize | 
+        fs_not_conf | 
+        dl_info | 
+        dl_sched | 
+        db_size | 
+        db_purge | 
+        db_purge_preview | 
+        db_system | 
+        cell_info | 
+        hosts_unused | 
+        dev_unused | 
+        lookup_sch | 
+        hosts_not_conf | 
+        licensing | 
+        host | 
+        media_list | 
+        media_list_extended | 
+        media_statistics | 
+        pool_list | 
+        single_session | 
+        session_objects | 
+        session_hosts | 
+        session_devices | 
+        session_media |
+        session_objcopies 
+
+
+
+ReportOptions 
+============= 
+ 
+SessionOption: 
+        -session SessionID 
+ 
+PoolOption:
+        -pool Poolname...
+ 
+LabelOption:
+        -label Label 
+ 
+LocationOption:
+        -location Location...
+ 
+LibraryOption:
+        -[no_]library Library...
+ 
+ProtectionOption:
+        -[no_]protection [NoOfDays] 
+ 
+MediaClassOption:
+        -class MediaClass 
+ 
+MediaStatusOption:
+        -status MediaStatus 
+ 
+SpecificationOption:
+        -datalist BackupSpecificationName...
+        -copylist_sch ScheduledCopySpecificationName...
+        -copylist_post PostbackupCopySpecificationName...
+        -verificationlist_sch ScheduledVerificationSpecificationName...
+        -verificationlist_post PostbackupVerificationSpecificationName...
+        -conslist_sch ScheduledConsolidationSpecificationName...
+        -conslist_post PostbackupConsolidationSpecificationName...
+        -no_datalist 
+        -no_copylist 
+        -no_verificationlist 
+        -no_conslist 
+
+DatalistGroupOption:
+
+        -group BackupSpecificationGroup
+
+LookupScheduleOption:
+
+        -schedule NoOfDays
+
+NetworkOption:
+
+        -network Network_IP_Adress...
+
+HostsOption:
+
+        -hosts Hostname...
+
+HostOption:
+
+        -host Hostname
+
+LevelOption:
+
+        -level Level
+
+ObjectCopiesOption:
+
+        -num_copies { less | equal | more } NumberOfCopies 
+
+TimeframeOption: 
+        -timeframe Start Duration | 
+        -timeframe Day Hour Day Hour 
+ 
+LatestObjectOption: 
+        -days NoOfDays 
+
+Level: 
+        warning | 
+        minor | 
+        major |  
+        critical 
+Day: 
+        [YY]YY/MM/DD   (1969 < [YY]YY < 2038)
+ 
+Hour: 
+        HH:MM 
