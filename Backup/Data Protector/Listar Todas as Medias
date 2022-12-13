@@ -1,0 +1,3 @@
+No powershell
+
+omnirpt -report media_list > medialist.txt
