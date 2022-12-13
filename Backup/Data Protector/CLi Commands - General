@@ -1,0 +1,379 @@
+A Data Protector command line (6.11) quick reference, it's quite useful on daily tasks.
+
+omniabort
+Aborts an active session.
+This command is available on systems with the Data Protector User Interface
+component installed.
+
+omniamo
+Starts an automated media operation session.
+This command is available on the Data Protector Cell Manager.
+
+omnib
+Backs up filesystems, disk images, the Data Protector internal database (IDB),
+Microsoft Exchange Server single mailboxes and Public Folders, Microsoft
+Exchange Server, Microsoft SQL Server, Microsoft SharePoint Portal Server (SPS),
+SAP R/3, SAP DB/MaxDB, Oracle, Informix Server, VMware Virtual Infrastructure
+(VMware), Sybase, Lotus, IBM DB2 UDB, NetWare objects, and NDMP objects.
+This is the only command supported with the MPE/iX integration.
+This command is available on systems with the Data Protector User Interface
+component installed.
+
+omnicc
+Handles the Data Protector licensing, reports the number of configured and
+available Data Protector licenses, installs the licenses, imports and exports Data
+Protector clients, and manages access to secured clients.
+Command line interface reference 25This command is available on systems with any Data Protector component
+installed.
+
+omnicellinfo
+Displays configuration information about the Data Protector cell.
+This command is available on systems with the Data Protector User Interface
+component installed.
+
+omniclus
+Manages load balancing in a cluster environment in the event of an application
+(Data Protector or other) failover.
+This command is available on systems with the Data Protector MS Cluster
+Support component installed (Windows systems) and on the Data Protector
+Cell Manager (UNIX systems).
+
+omnicreatedl
+Creates a Data Protectorbackup specification file (datalist); or an HP
+StorageWorks Disk Array XP, HP StorageWorks Virtual Array, or HP
+StorageWorks Enterprise Virtual Array Microsoft Exchange Server ZDB backup
+specification file (datalist).
+This command is available on systems with the Data Protector User Interface
+component installed.
+
+omnidb
+Queries the Data Protector internal database (IDB).
+This command is available on systems with the Data Protector User Interface
+component installed.
+
+omnidbsmis
+Executes administrative tasks required for managing the HP StorageWorks
+Enterprise Virtual Array (EVA) Command View.
+This command is available on systems with the Data Protector User Interface
+component installed.
+
+omnidbva
+Queries the ZDB database (VADB) and administers the VA LUN Exclude File,
+instant recovery and password information.
+This command is available on systems with the Data Protector User Interface
+component installed.
+
+omnidbvss
+Queries the VSS database; manages, browses, and lists the items of the VSS
+database.
+This command is available on systems with the Data Protector User Interface
+component installed.
+
+omnidbxp
+Queries the ZDB database (XPDB), manipulates the XP LDEV exclude file, and
+configures the HP StorageWorks Disk Array XP command devices usage.
+This command is available on systems with the Data Protector User Interface
+component installed.
+
+omnidownload
+Downloads information about a backup device and a library from the Data
+Protector internal database (IDB).
+This command is available on systems with the Data Protector User Interface
+component installed.
+
+omniiso
+Primarily serves as a pre-exec script to prepare the ISO image file for One Button
+Disaster Recovery (OBDR); can also be used as a standalone command to
+automate your backup and disaster recovery process.
+This command is available on systems with the Data Protector Automatic
+Disaster Recovery component installed.
+
+omnimcopy
+Makes a copy of a Data Protector medium using Data Protector backup devices
+as the source and destination.
+This command is available on systems with the Data Protector User Interface
+component installed.
+
+omniminit
+Initializes a Data Protector medium.
+This command is available on systems with the Data Protector User Interface
+component installed.
+
+omnimlist
+Lists the contents of a Data Protector medium.
+This command is available on systems with the Data Protector User Interface
+component installed.
+
+omnimm
+Provides media management for Data Protector.
+This command is available on systems with the Data Protector User Interface
+component installed.
+
+omnimnt
+Responds to a Data Protector mount request for a medium.
+Command line interface reference 27This command is available on systems with the Data Protector User Interface
+component installed.
+
+omnimver
+Verifies data on a medium.
+This command is available on systems with the Data Protector User Interface
+component installed.
+
+omniobjconsolidate
+Consolidates Data Protector backup objects into synthetic full backups.
+This command is available on systems with the Data Protector User Interface
+component installed.
+
+omniobjcopy
+Creates additional copies of objects backed up with Data Protector on a different
+media set.
+This command is available on systems with the Data Protector User Interface
+component installed.
+
+omniobjverify
+Verifies Data Protector backup objects, either interactively or using pre-configured
+post-backup, or scheduled verification specifications.
+This command is available on systems with the Data Protector User Interface
+component installed.
+
+omnir
+Restores filesystems, disk images, the Data Protector database (IDB), Microsoft
+Exchange Server single mailboxes and Public Folders, Microsoft Exchange Server,
+Microsoft SQL Server, Microsoft SharePoint Portal Server (SPS), SAP R/3, SAP
+DB/MaxDB, Informix Server, VMware Virtual Infrastructure (VMware), Lotus, IBM
+DB2 UDB, NetWare objects, and NDMP objects backed up with Data Protector.
+The command is also used to start the instant recovery process. To restore a
+Sybase database, refer to the syb_tool man page.
+This command is available on systems with the Data Protector User Interface
+component installed.
+
+omnirpt
+Generates various reports about the Data Protector environment, for example,
+about backup, object copy, object consolidation, and object verification sessions
+in a specific time frame, session specifications, media, Data Protector
+configuration, and single sessions.
+This command is available on systems with the Data Protector User Interface
+component installed.
+
+omnistat
+Displays the status of active Data Protector backup and restore sessions.
+This command is available on systems with the Data Protector User Interface
+component installed.
+
+omniupload
+Uploads information about a backup device from an ASCII file to the Data
+Protector internal database (IDB).
+This command is available on systems with the Data Protector User Interface
+component installed.
+
+omniusers
+Adds or removes Data Protector users to or from an existing Data Protector user
+group, or lists the configured Data Protector users. It enables you to use all GUI
+functionality on a Cell Manager platform on which the GUI is not available,
+using a GUI installed on another system.
+This command is available on systems with the Data Protector User Interface
+component installed.
+
+syb_tool
+A utility used to get ISQL command needed to restore a Sybase database that
+was backed up by Data Protector.
+This command is available on systems with the Data Protector Sybase
+Integration component installed.
+
+ADMINISTRATIVE COMMANDS (1M):
+
+ob2install
+Runs remote client installation, uninstallation, upgrade, or check of a client from
+the selected Installation Server.
+This command is available on the Data Protector Installation Server.
+
+omnicheck
+Performs a DNS connections check within a Data Protector cell and lists Data
+Protector patches installed on Data Protector clients.
+This command is available on systems with any Data Protector component
+installed.
+
+omnidbcheck
+Checks the consistency of the Data Protector internal database (IDB).
+This command is available on the Data Protector Cell Manager.
+
+omnidbinit
+Initializes the Data Protector internal database (IDB).
+This command is available on the Data Protector Cell Manager.
+Command line interface reference 29omnidbrestore
+Restores the Data Protector internal database (IDB).
+This command is available on the Data Protector Cell Manager.
+
+omnidbupgrade
+Converts filenames in the IDB to the new internal character encoding used in
+Data Protector A.06.11 and thus enables the correct handling of non-ASCII
+characters in filenames in the Data Protector GUI.
+This command is available on the Data Protector Cell Manager.
+
+omnidbutil
+Handles various Data Protector internal database (IDB) maintenance tasks.
+This command is available on the Data Protector Cell Manager.
+
+omnidlc
+Gathers or deletes Data Protector debug, log, and getinfo files from the Data
+Protector cell or from a MoM environment.
+This command is available on the Data Protector Cell Manager.
+
+omnidr
+A general purpose Data Protector disaster recovery command. Based on its input,
+it decides on what type of restore to perform (online restore using omnir or
+offline restore using omniofflr), as well as how to perform the restore (whether
+or not to use live OS features).
+This command is available on systems with the Data Protector User Interface
+component installed.
+
+omnihealthcheck
+Checks the status of Data Protector services, the consistency of the Data Protector
+internal database (IDB), and if at least one backup of the IDB exists.
+This command is available on the Data Protector Cell Manager.
+
+omniinetpasswd
+Manages the local Data Protector Inet configuration on Windows systems where
+the Inet process must be run under a specific user account, and sets a user account
+to be used by the Installation Server during remote installation.
+This command is available on systems with any Data Protector component
+installed.
+
+omniinstlic
+Starts the HP AutoPass utility or synchronizes the Data Protector licenses between
+Data Protector and HP AutoPass.
+This command is available on the Data Protector Cell Manager.
+
+omniintconfig.pl
+30Configures, updates configuration parameters, and checks the configuration of
+one or multiple Oracle databases.
+This command is available on systems with the Data Protector User Interface
+component installed.
+
+omnikeymigrate
+Helps you migrate your existing keystore file from Data Protector A.06.00 client
+system and imports it into the central keystore file on the Data Protector A.06.11
+Cell Manager.
+This command is available on the Data Protector Cell Manager.
+
+omnikeytool
+Manages keys used for encryption.
+This command is available on the Data Protector Cell Manager.
+
+omnimigrate.pl
+Helps you migrate your existing Cell Manager from a PA-RISC architecture based
+HP-UX 11.x system to an HP-UX 11.23 system for the Intel Itanium 2 (IA-64)
+architecture.
+This command is available on the Data Protector Cell Manager.
+
+omniofflr
+Enables restore of any type of Data Protector backup object in the absence of a
+working Data Protector internal database (IDB).
+This command is available on systems with the Data Protector User Interface
+component installed.
+
+omniresolve
+Resolves a filesystem object or a list of filesystem objects and writes the results
+to the standard output or to a Unicode file.
+This command is available on systems with any Data Protector integration
+component installed.
+
+omnirsh
+Returns the hostnames of the physical and virtual nodes for the specified cluster
+hostname, or returns the cell information stored in the cell_info file on the specified
+cluster.
+This command is available on the Data Protector Cell Manager.
+
+omnisetup.sh
+Installs or upgrades a Data Protector UNIX Cell Manager, Installation Server, or
+client system locally.
+This command is available on the Data Protector installation DVD-ROMs for UNIX
+systems.
+
+omnisrdupdate
+Updates the System Recovery Data (SRD) file.
+This command is available on systems with the Data Protector User Interface
+component installed.
+
+omnisv
+Starts, stops, or displays the status of Data Protector daemons (HP-UX, Solaris,
+or Linux systems) or services (Windows systems).
+This command is available on the Data Protector Cell Manager.
+
+omnitrig
+Triggers Data Protector scheduled backups.
+This command is available on the Data Protector Cell Manager.
+
+sanconf
+Auto-configures a library, modifies an existing library or drive configuration, or
+removes drives from a library configuration, within a SAN environment.
+This command is available on systems with the Data Protector User Interface
+component installed.
+
+upgrade_cm_from_evaa
+Upgrades the EVADB entries created by the HP StorageWorks EVA Agent (legacy)
+to the SMISDB entries created by the HP StorageWorks EVA SMI-S Agent.
+This command is available on the Data Protector Cell Manager.
+
+util_cmd
+Sets, retrieves or lists the parameters stored in the Data Protector Oracle, SAP
+R/3, VMware Virtual Infrastructure (VMware), Informix, and Sybase configuration
+files.
+This command is available on systems with any Data Protector component
+installed.
+
+util_oracle8.pl
+Configures an Oracle database and prepares the environment for backup, and
+checks the configuration of an Oracle database.
+This command is available on systems with the Data Protector Oracle
+Integration component installed.
+
+util_vmware.exe
+Configures a VMware datacenter, checks the configuration of a VMware
+datacenter, and lists all configured VMware datacenters.
+This command is available on systems with the Data Protector VMware
+Integration component installed.
+
+winomnimigrate.pl
+Helps you migrate your existing Cell Manager from a 32-bit Windows system
+to a 64-bit Windows system, or from a 64-bit Windows system to 64-bit Windows
+Server 2008.
+This command is available on the Data Protector Cell Manager.
+COMMAND-LINE UTILITIES (1M):
+
+cjutil
+Starts, stops, and queries the Windows Change Journal.
+This command is available on systems with the Data Protector Disk Agent
+component installed.
+
+NNMpost.ovpl
+A script with no arguments that resumes the eight processes paused by
+
+NNMpre.ovpl.
+This command is available on systems with the Data Protector HP Network
+Node Manager Integration component installed.
+
+NNMpre.ovpl
+Starts NNM embedded database backup.
+This command is available on systems with the Data Protector HP Network
+Node Manager Integration component installed.
+
+NNMScript.exe
+Finds the location of the NNM Perl compiler and the NNMpre.ovpl and
+NNMpost.ovpl scripts and starts the two scripts.
+This command is available on systems with the Data Protector HP Network
+Node Manager Integration component installed.
+
+omnicjutil
+Remotely controls and administers the Windows Change Journal on Windows
+clients.
+This command is available on the Data Protector Cell Manager.
+
+omnistoreapputil
+Acts as a user interface to Storage Appliances, such as VLS.
+This command is available on the Data Protector Cell Manager.
+
+uma
+Controls the robotics of SCSI compliant autochangers.
+This command is available on systems with the Data Protector General Media
+Agent or NDMP Media Agent component installed.
