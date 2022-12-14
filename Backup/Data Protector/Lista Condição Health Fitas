@@ -1,0 +1,3 @@
+omnirpt -report media_statistics
+
+omnirpt -report media_statistics > stats.txt
