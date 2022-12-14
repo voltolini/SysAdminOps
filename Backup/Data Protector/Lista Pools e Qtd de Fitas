@@ -1,0 +1,3 @@
+omnirpt -report pool_list
+
+omnirpt -report pool_list > pools.txt
