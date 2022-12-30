@@ -1,0 +1,9 @@
+## Identificar owner de VM em ambiente Hyper-V ##
+Abrir o regedit e seguir para o seguinte caminho:
+VM 32 bits
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Virtual Machine\Guest\Parameters
+
+VM 64 bits
+HKEY_LOCAL_MACHINE64\SOFTWARE\Microsoft\Virtual Machine\Guest\Parameters
+
+Você verá o campo PhysicalHostName com o nome do seu Host. 
