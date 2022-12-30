@@ -1,0 +1,3 @@
+## Consulta campos e parâmetros no regedit via PS ##
+Get-ChildItem -Path HKCU:\ | Select-Object Name (HKEY_CURRENT_USER)
+Get-ChildItem -Path HKLM:\ | Select-Object Name (HKEY_LOCAL_MACHINE)
