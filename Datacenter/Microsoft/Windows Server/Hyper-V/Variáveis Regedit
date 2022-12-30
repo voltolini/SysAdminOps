@@ -1,0 +1,2 @@
+## Powershell - Verificar variáveis do regedit ##
+get-psdrive
