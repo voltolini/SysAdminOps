@@ -7,3 +7,10 @@ VM 64 bits
 HKEY_LOCAL_MACHINE64\SOFTWARE\Microsoft\Virtual Machine\Guest\Parameters
 
 Você verá o campo PhysicalHostName com o nome do seu Host. 
+
+## Usando o PS ##
+Get-ChildItem -path 'HKLM:\SOFTWARE\Microsoft\Virtual Machine\Guest\'
+
+OU
+
+Get-ItemPropertyValue -Path 'HKLM:\SOFTWARE\Microsoft\Virtual Machine\Guest\Parameters\'  -Name PhysicalHostName
