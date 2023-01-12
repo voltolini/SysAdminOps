@@ -1,0 +1,9 @@
+## Força a sincronização entre ADs Locais ##
+repadmin /syncall /AePd
+repadmin /syncall /AePdq
+
+
+## Força a sincronização entre ADs Locais para Azure AD ##
+Start-ADSyncSyncCycle -PolicyType Delta
+Start-ADSyncSyncCycle -PolicyType Initial
+
