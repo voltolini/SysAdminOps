@@ -1,1 +1,5 @@
-=D
+## Check list - Updates Instalados ##
+wmic qfe list
+
+## Check de KB ou Security Update Específico ##
+wmic qfe | find "kb123456"
