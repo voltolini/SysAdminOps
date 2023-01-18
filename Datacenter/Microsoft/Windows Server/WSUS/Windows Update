@@ -1,5 +1,11 @@
-## Check list - Updates Instalados ##
+## Check list - Updates Instalados [via cmd] ##
 wmic qfe list
 
-## Check de KB ou Security Update Específico ##
+## Check de KB ou Security Update Específico [via cmd] ##
 wmic qfe | find "kb123456"
+
+## Check de KB ou Security Update Específico [via powershell] ##
+Get-HotFix -Id kb12345678
+
+## Check de KB ou Security Update Específico em host remoto [via powershell] ##
+Get-HotFix -Description Security* -ComputerName Server01, Server02 -Cred Server01\Administrator
