@@ -1,0 +1,18 @@
+## Enable Audio in VM ##
+  ++ IMPORTANTE ++
+DESLIGAR A VM, FAZER AS ALTERAÇÕES NO ARQUIVO E RELIGAR
+
+Achar localização dos arquivos de configuração da VM, normalmente em:
+Datastores:
+/vmfs/volumes/xxxxxxxxxxx/vm-name/
+
+Dentro do diretório, localizar o seguinte arquivo vm-name.vmx;
+Abrir o arquivo em algum editor e adicionar ao final do arquivo, as seguintes linhas:
+
+sound.present = "TRUE"
+sound.allowGuestConnectionControl = "FALSE"
+sound.virtualDev = "hdaudio"
+sound.fileName = "-1"
+sound.autodetect = "TRUE"
+
+Salvar e ligar a VM.
