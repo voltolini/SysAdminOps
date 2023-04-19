@@ -1,0 +1,2 @@
+### On powershell ###
+repadmin /syncall /AePdq
