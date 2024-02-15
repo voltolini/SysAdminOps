@@ -1,1 +1,56 @@
-## ##
+ena
+ 
+show interfaces status
+
+show mac address-table
+
+show mac address-table | include xxxxx (último 4 dígitos do mac)
+
+show ip arp inspection
+
+show mac address-table address xxxx.xxxx.xxxx
+
+ver as maquinas por porta
+#show lldp remote-device all
+ 
+ver se a porta esta autenticada
+#do show authentication authentication-history gigabitethernet 1/0/1
+ 
+ver se quem esta logado nesta porta
+#show authentication clients gigabitethernet 1/0/xx
+
+entrar na interface de rede (porta)
+#interface gigabitethernet 1/0/xx
+
+ver status da porta
+#show interfaces status gigabitethernet 1/0/xx
+
+ver status geral das portas
+#show interfaces status
+
+entrar em porta específica
+console# config
+console(config)# interface gigabitethernet 1/0/xx
+console(config-if)# shutdown
+console(config-if)# no shutdown
+
+ver o mac dar portas
+#show mac address-table | exclude 1/0/xx
+#show mac address-table address 7486.e2d6.5213
+
+desativa/ativa porta do sw
+#shutdown
+#no shutdown
+
+Aplica/Modifica Vlan da porta
+#switchport general allowed vlan add 2,40-41
+
+Mostra as configurações da porta selecionada
+#show running-config interface gigabitethernet 1/0/1
+
+Mostra vlans
+#show vlan
+
+Adiciona descrição na porta
+#description xxxxxxxx
+
