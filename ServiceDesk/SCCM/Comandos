@@ -1,0 +1,9 @@
+Instalador \\TBFSDSVSCCMAPP\Sources\Client
+
+C:\>cd PSTools
+C:\PSTools>psexec.exe \\10.5.189.208 -s cmd
+ 
+psexec.exe \\ip do host -s cmd
+ccmsetup.exe /uninstall
+tasklist | find /i “ccm”
+instalclientSCCM.bat
