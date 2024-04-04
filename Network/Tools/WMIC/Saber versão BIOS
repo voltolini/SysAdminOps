@@ -1,0 +1,2 @@
+##Saber versão da BIOS:
+wmic /node:"HOSTNAME" bios get smbiosbiosversion
