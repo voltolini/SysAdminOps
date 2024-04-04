@@ -1,0 +1,5 @@
+#Checa a versão:
+wmic product where "Name like '%agentinstall%'" get Name, Version, IdentifyingNumber, InstallDate
+
+#Checa se está rodando:
+wmic service where 'name like "%wdp%" or name like "%edpa%"' get displayname,name,state,started,ProcessId
