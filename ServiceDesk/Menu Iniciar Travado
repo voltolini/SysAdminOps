@@ -1,0 +1,5 @@
+Abrir o cmd e executar o comando abaixo:
+taskkill /f /im explorer.exe
+
+Menu iniciar irá fechar, usar o gerenciador de tarefas para executar o comando abaixo:
+start explorer.exe
