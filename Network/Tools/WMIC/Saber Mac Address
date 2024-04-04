@@ -1,0 +1,4 @@
+#Verificar MAC ADDRESS
+wmic /node:xxx.xxx.xxx.xxx NIC get description,macaddress
+
+wmic /node:xxx.xxx.xxx.xxx NIC where PhysicalAdapter='true' get description,macaddress
