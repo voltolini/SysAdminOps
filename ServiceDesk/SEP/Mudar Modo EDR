@@ -1,0 +1,15 @@
+Get-MPComputerStatus|select AMRunningMode
+
+mudar EDR para passivo:
+ 
+Path: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection.
+Name: ForceDefenderPassiveMode.
+Type: REG_DWORD.
+Value: 1.
+ 
+mudar EDR para ativo:
+ 
+Path: HKLM\SOFTWARE\Policies\Microsoft\Windows Advanced Threat Protection.
+Name: ForceDefenderPassiveMode.
+Type: REG_DWORD.
+Value: 0.
