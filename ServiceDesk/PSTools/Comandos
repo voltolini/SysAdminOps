@@ -1,0 +1,2 @@
+##Reboot forçado (se não houver ninguém usando):
+psexec32 -s -h \\HOSTNAME cmd /c "manage-bde -protectors -disable c: -RebootCount 1 && shutdown /r /t 0"
