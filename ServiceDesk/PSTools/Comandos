@@ -21,4 +21,10 @@ xcopy /y "C:\tmp\OptiPlex_3090_2.16.0.exe" "\\HOSTNAME\C$\temp"
 Instala:
 psexec32 -s -h \\HOSTNAME cmd /c "c:\TEMP\OptiPlex_3090_2.16.0.exe /s"
 
+##Inicia serviço em servidor/computador remoto:
+psexec.exe \\xxx.xxx.xxx.xxx -s cmd
+net start "service_name"
+net stop "service_name"
+net restart "service_name"
+
 ##
