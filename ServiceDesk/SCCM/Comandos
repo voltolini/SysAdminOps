@@ -1,4 +1,4 @@
-Instalador \\TBFSDSVSCCMAPP\Sources\Client
+Localizar instalador na rede/servidor
 
 C:\>cd PSTools
 C:\PSTools>psexec.exe \\10.5.189.208 -s cmd
