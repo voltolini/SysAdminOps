@@ -1,0 +1,10 @@
+Segura o botão do token por alguns segundo até aparecer um monte de 88888, vai aparecer lc-03 aperta mais uma vez vai aparecer um número
+se for 4152 =AR se for 4153=AS,
+depois vai aparecer mais 3 sequencias de 4 números;
+Pega sempre o 2º e o 4 º número de cada sequência,
+aí vai dar o número do serial.
+ 
+Exemplo 01
+4152:   3735 - 3934- 3430  o serial é AR759440
+Exemplo 02
+4153:    3032 - 3035 – 3530 o serial é AS020550
