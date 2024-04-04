@@ -1,0 +1,2 @@
+##Ver a versão do kernel do WIndows 11:
+wmic /node:"HOSTNAME" datafile where name="C:\\WINDOWS\\system32\\ntoskrnl.exe" get Version
