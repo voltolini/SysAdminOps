@@ -1,3 +1,5 @@
+
+##Instalação SCCM:
 Localizar instalador na rede/servidor
 
 C:\>cd PSTools
@@ -7,3 +9,5 @@ psexec.exe \\ip do host -s cmd
 ccmsetup.exe /uninstall
 tasklist | find /i “ccm”
 instalclientSCCM.bat
+
+##
