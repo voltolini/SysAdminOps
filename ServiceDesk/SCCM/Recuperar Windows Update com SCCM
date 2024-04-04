@@ -1,0 +1,24 @@
+Método 1:
+Deletar pasta ccmcache e Download
+C:\Windows\ccmcache
+C:\Windows\SoftwareDistribution\Download
+Executar novamente o verify do windows update
+
+Método 2 - Regeit
+Computador\HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate\AU
+Mudar a chave UseWUServer de "1" para "0"
+Executar o verify do Windows Update
+
+Método 3 - Dism
+DISM /Online /Cleanup-Image /ScanHealth
+DISM /Online /Cleanup-image /Restorehealth
+DISM /Online /Cleanup-Image /RestoreHealth /Source:E:\Sources\install.esd
+sfc /scannow
+
+
+
+
+###<EM ÚLTIMO CASO>###
+C:/Windows/SoftwareDistribution
+Deletar pasta com o serviço de do Windows Update offline
+Subir o serviço e checar update novamente
